@@ -1,8 +1,9 @@
 How to use Refreshable modifier in SwiftUI.
 ===========================================
 
- <video src="https://github.com/Elaidzha1940/Refreshable/assets/64445918/8752bd3a-25dd-4cb4-8fc9-b5f00145db49" type="video/mp4">
- <video src="https://github.com/Elaidzha1940/Refreshable/assets/64445918/7e14990b-cb1e-4bf4-ab30-0ca8330b2c5f" type="video/mp4">
- <video src="https://github.com/Elaidzha1940/Refreshable/assets/64445918/aea0f3d3-0d9b-4ce1-b4a9-c5287214ba98" type="video/mp4">
+<img src="https://github.com/Elaidzha1940/Refreshable/assets/64445918/9251df52-bbf2-493a-99a7-d016db978061" width="130" height="270">
 
-[![Alt text](https://github.com/Elaidzha1940/Refreshable/assets/64445918/8752bd3a-25dd-4cb4-8fc9-b5f00145db49)](https://github.com/Elaidzha1940/Refreshable/assets/64445918/8752bd3a-25dd-4cb4-8fc9-b5f00145db49)
+<img src="https://github.com/Elaidzha1940/Refreshable/assets/64445918/39274b7a-ab1e-4167-a2e4-b1281ced2663" width="130" height="270">
+
+<img src="https://github.com/Elaidzha1940/Refreshable/assets/64445918/2c208083-5b2b-4296-a3c6-7a15825c9187" width="130" height="270">
+
