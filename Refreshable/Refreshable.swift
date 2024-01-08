@@ -6,13 +6,14 @@
 //  Date: 08.01.2024
 //
 //  */
-  
+
 import SwiftUI
 
 final class RefreshableDataService {
     
     func getData() async throws -> [String] {
-        ["Banana", "Melon", "Apple"].shuffled()
+        try? await Task.sleep(nanoseconds: 5_000_000_000)
+        return ["Banana", "Melon", "Apple"].shuffled()
     }
 }
 
@@ -21,13 +22,11 @@ final class RefreshableViewModel: ObservableObject {
     @Published private(set) var items: [String] = []
     let manager = RefreshableDataService()
     
-    func loadData() {
-        Task {
-            do {
-                items = try await manager.getData()
-            } catch {
-                print(error)
-            }
+    func loadData() async {
+        do {
+            items = try await manager.getData()
+        } catch {
+            print(error)
         }
     }
 }
@@ -45,11 +44,14 @@ struct Refreshable: View {
                             .font(.headline)
                     }
                 }
-                .navigationTitle("Refreshable")
             }
-            .onAppear {
-                viewModel.loadData()
-                    
+            .refreshable {
+                await viewModel.loadData()
+            }
+            .navigationTitle("Refreshable")
+            .task {
+                await viewModel.loadData()
+                
             }
         }
     }
